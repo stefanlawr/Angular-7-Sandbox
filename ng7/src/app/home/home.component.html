@@ -1,7 +1,7 @@
-<h1 [ngStyle]="{
+<!-- <h1 [ngStyle]="{
   'color': h1Style ? 'gray' : 'black',
   'font-size': !h1Style ? '1em' : '4em'
-}">Home</h1>
+}">Home</h1> -->
 <!-- <h1 [style.color]="h1Style ? 'gray' : 'black'">Home</h1> -->
 <!-- <h1 [class.gray]="h1Style">Home</h1> -->
 <!-- <h1 [ngClass]="{
@@ -9,4 +9,12 @@
   'large': !h1Style
 }">Home</h1> -->
 
-<button (click)="firstClick()">Click Me</button>
+<!-- <button (click)="firstClick()">Click Me</button> -->
+
+<h1> Home </h1>
+<ul *ngIf="users">
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar">
+    <p>{{ user.first_name }} {{ user.last_name }}</p>
+  </li>
+</ul>
