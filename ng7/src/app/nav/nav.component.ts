@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  // tslint:disable-next-line:no-inferrable-types
+  appTitle: string = 'Angular 7 Sandbox';
+
   constructor() { }
 
   ngOnInit() {
